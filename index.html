@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Quiz Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="welcome-message"> </h1>
+            <p class="intro-text">Test your knowledge on Sustainable Development Goals. Begin the quiz below!</p>
+        </header>
+        <div class="quiz-container">
+            <div class="question-box">
+                <p id="question"></p>
+                <img src="assets/SDG.png" alt="SDM Image" class="question-image">
+            </div>
+            <div class="options-box">
+                <ul id="options">
+                    <!-- Options will be injected here from js -->
+                </ul>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button id="prevBtn" onclick="prevQuestion()">&lt; Previous Question</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next Question &gt;</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 SDG Quiz Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
